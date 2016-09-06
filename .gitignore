@@ -1,1 +1,4 @@
-.idea
+/.idea/
+/node_modules/
+/temp/dongseup/node_modules/
+/temp/dongseup/.idea/

@@ -1,0 +1,52 @@
+@import '../variable';
+
+.list{
+  padding-left:33px;
+  >li{
+    position:relative;
+    >a{
+      display:block;
+      color:#000;
+      text-decoration: none;
+      &:nth-child(1){
+        border-bottom:1px solid #c8c7cc;
+        padding:10px 0;
+        position:relative;
+        strong{
+          display:block;
+          span{
+            color:#000;
+            font-weight:bold;
+          }
+        }
+        sub{
+          font-size:12px;
+        }
+        time{
+          position:absolute;
+          right:50px;
+          top:50%;
+          margin-top:-8px;
+        }
+      }
+      &.info{
+        position:absolute;
+        right:10px;
+        top:50%;
+        z-index:10;
+        margin-top:-12px;
+        width:25px;
+        height:25px;
+        background:#ccc;
+      }
+    }
+
+    &.absence{
+      >a{
+        strong{
+          color:#ff3b30;
+        }
+      }
+    }
+  }
+}
