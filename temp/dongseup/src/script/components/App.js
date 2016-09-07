@@ -1,12 +1,13 @@
 import React from 'react';
-import List from './List';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import Contact from './Contact';
 
 class App extends React.Component {
     render(){
         return (
-            <List/>
+            <Contact/>
         );
     }
 }
 
-export default App;
+export default App; 

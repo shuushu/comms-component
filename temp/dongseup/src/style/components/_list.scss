@@ -1,9 +1,9 @@
-@import '../variable';
-
 .list{
-  padding-left:33px;
   >li{
     position:relative;
+    padding-left:33px;
+    background:url('/image/ico_call.gif') no-repeat 10px 50%;
+    background-size:13px auto;
     >a{
       display:block;
       color:#000;
@@ -37,11 +37,13 @@
         margin-top:-12px;
         width:25px;
         height:25px;
-        background:#ccc;
+        background:url('/image/ico_information.gif') no-repeat;
+        background-size:25px auto;
       }
     }
 
     &.absence{
+      background:none;
       >a{
         strong{
           color:#ff3b30;
@@ -49,4 +51,10 @@
       }
     }
   }
+}
+
+.noData{
+  text-align:center;
+  font-size:18px;
+  padding:20px 0;
 }

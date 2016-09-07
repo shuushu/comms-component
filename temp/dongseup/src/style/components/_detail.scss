@@ -1,0 +1,41 @@
+.detail{
+  .header{
+    padding:20px 0;
+    position:relative;
+    border-bottom:1px solid #b2b2b2;
+    background:#f9f9f9;
+    h1{
+      text-align:center;
+      font-weight:bold;
+    }
+    >a{
+      position:absolute;
+      top:20px;
+      font-size:16px;
+      color:#cbcbcb;
+      text-decoration: none;
+      &.complete{
+        right:10px;
+        color:#007aff;
+      }
+      &.cancel {
+        left:10px;
+      }
+    }
+  }
+  .inputArea{
+    padding:10px;
+    li{
+      margin-bottom:5px;
+      input[type=text] {
+        box-sizing: border-box;
+        width:100%;
+        padding:10px;
+        -webkit-appearance: none;
+        border:none;
+        border-bottom:1px solid #e7e7e7;
+        border-radius:0;
+      }
+    }
+  }
+}
