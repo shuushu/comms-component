@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8e721f1456a40764a818"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5bbeac74f5df62b84405"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28125,7 +28125,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.blind {\n  height: 0;\n  overflow: hidden;\n  display: inline-block;\n  position: absolute; }\n\n.list > li {\n  position: relative;\n  padding-left: 33px;\n  background: url(\"/image/ico_call.gif\") no-repeat 10px 50%;\n  background-size: 13px auto; }\n  .list > li > a {\n    display: block;\n    color: #000;\n    text-decoration: none; }\n    .list > li > a:nth-child(1) {\n      border-bottom: 1px solid #c8c7cc;\n      padding: 15px 0 10px;\n      position: relative; }\n      .list > li > a:nth-child(1) strong {\n        display: block; }\n        .list > li > a:nth-child(1) strong span {\n          color: #000;\n          font-weight: bold; }\n      .list > li > a:nth-child(1) sub {\n        font-size: 12px; }\n      .list > li > a:nth-child(1) time {\n        position: absolute;\n        right: 50px;\n        top: 50%;\n        margin-top: -6px; }\n    .list > li > a.info {\n      position: absolute;\n      right: 10px;\n      top: 50%;\n      z-index: 10;\n      margin-top: -12px;\n      width: 25px;\n      height: 25px;\n      background: url(\"/image/ico_information.gif\") no-repeat;\n      background-size: 25px auto; }\n  .list > li.absence {\n    background: none; }\n    .list > li.absence > a strong {\n      color: #ff3b30; }\n\n.noData {\n  text-align: center;\n  font-size: 18px;\n  padding: 20px 0; }\n\n.detail .header {\n  padding: 20px 0;\n  position: relative;\n  border-bottom: 1px solid #b2b2b2;\n  background: #f9f9f9; }\n  .detail .header h1 {\n    text-align: center;\n    font-weight: bold; }\n  .detail .header > a {\n    position: absolute;\n    top: 20px;\n    font-size: 16px;\n    color: #cbcbcb;\n    text-decoration: none; }\n    .detail .header > a.complete {\n      right: 10px;\n      color: #007aff; }\n    .detail .header > a.cancel {\n      left: 10px; }\n\n.detail .inputArea {\n  padding: 10px; }\n  .detail .inputArea li {\n    margin-bottom: 5px; }\n    .detail .inputArea li input[type=text] {\n      box-sizing: border-box;\n      width: 100%;\n      padding: 10px;\n      -webkit-appearance: none;\n      border: none;\n      border-bottom: 1px solid #e7e7e7;\n      border-radius: 0; }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.blind {\n  height: 0;\n  overflow: hidden;\n  display: inline-block;\n  position: absolute; }\n\n.list > li {\n  position: relative;\n  padding-left: 33px;\n  background: url(\"/image/ico_call.jpg\") no-repeat 10px 50%;\n  background-size: 17px auto; }\n  .list > li > a {\n    display: block;\n    color: #000;\n    text-decoration: none; }\n    .list > li > a:nth-child(1) {\n      border-bottom: 1px solid #c8c7cc;\n      padding: 15px 0 10px;\n      position: relative; }\n      .list > li > a:nth-child(1) strong {\n        display: block; }\n        .list > li > a:nth-child(1) strong span {\n          color: #000;\n          font-weight: bold; }\n      .list > li > a:nth-child(1) sub {\n        font-size: 12px; }\n      .list > li > a:nth-child(1) time {\n        position: absolute;\n        right: 50px;\n        top: 50%;\n        margin-top: -6px; }\n    .list > li > a.info {\n      position: absolute;\n      right: 10px;\n      top: 50%;\n      z-index: 10;\n      margin-top: -12px;\n      width: 25px;\n      height: 25px;\n      background: url(\"/image/ico_information.gif\") no-repeat;\n      background-size: 25px auto; }\n  .list > li.absence {\n    background: none; }\n    .list > li.absence > a strong {\n      color: #ff3b30; }\n\n.noData {\n  text-align: center;\n  font-size: 18px;\n  padding: 20px 0; }\n\n.detail .header {\n  padding: 20px 0;\n  position: relative;\n  border-bottom: 1px solid #b2b2b2;\n  background: #f9f9f9; }\n  .detail .header h1 {\n    text-align: center;\n    font-weight: bold; }\n  .detail .header > a {\n    position: absolute;\n    top: 20px;\n    font-size: 16px;\n    color: #cbcbcb;\n    text-decoration: none; }\n    .detail .header > a.complete {\n      right: 10px;\n      color: #007aff; }\n    .detail .header > a.cancel {\n      left: 10px; }\n\n.detail .inputArea {\n  padding: 10px; }\n  .detail .inputArea li {\n    margin-bottom: 5px; }\n    .detail .inputArea li input[type=text] {\n      box-sizing: border-box;\n      width: 100%;\n      padding: 10px;\n      -webkit-appearance: none;\n      border: none;\n      border-bottom: 1px solid #e7e7e7;\n      border-radius: 0; }\n", ""]);
 
 	// exports
 
@@ -28536,6 +28536,52 @@
 	            selectedKey: -1,
 	            contactData: [// 데이터가 없을경우 nodata
 	            {
+	                name: '이승헌',
+	                phone: '010-3484-2922',
+	                accumulate: 2
+	            }, {
+	                name: '최훈철',
+	                phone: '010-7878-2908',
+	                accumulate: 1
+	            }, {
+	                name: '이인영',
+	                phone: '010-2648-1909'
+	            }, {
+	                name: '이상훈',
+	                phone: '010-9098-2958',
+	                absence: 1,
+	                accumulate: 3
+	            }, {
+	                name: '김율아',
+	                phone: '010-2929-1100'
+	            }, {
+	                name: '유낙동',
+	                phone: '010-2967-1123',
+	                absence: 1
+	            }, {
+	                name: '이승헌',
+	                phone: '010-3484-2922',
+	                accumulate: 2
+	            }, {
+	                name: '최훈철',
+	                phone: '010-7878-2908',
+	                accumulate: 1
+	            }, {
+	                name: '이인영',
+	                phone: '010-2648-1909'
+	            }, {
+	                name: '이상훈',
+	                phone: '010-9098-2958',
+	                absence: 1,
+	                accumulate: 3
+	            }, {
+	                name: '김율아',
+	                phone: '010-2929-1100'
+	            }, {
+	                name: '유낙동',
+	                phone: '010-2967-1123',
+	                absence: 1
+	            }, {
 	                name: '이승헌',
 	                phone: '010-3484-2922',
 	                accumulate: 2
