@@ -1,6 +1,6 @@
 # react
 
-##1강 연습 (10/08)
+##Lesson1. JSX syntax / props (10/08)
 
 [예제파일](http://codepen.io/shuushu/pen/EgQpXQ)
 - CODEPEN 설정 , ES6 클래스
@@ -77,7 +77,7 @@ CheckType.defaultProps = {
 ReactDOM.render (<CheckType />, document.getElementById('checkType'))
 ```
 
-##2강 연습 (10/09)
+##Lesson2. this.state (10/08)
 
 > STATE는 컴포넌트에서 유동적인 데이터를 보내주는데 초기값을 설정해주는 것이 필수이다. 만약에 기본값 설정을 하지 않고 렌더링 부분(JSX내부)에서 this.state.stateName을 하면 에러가 발생한다.
 또, props와 달리 this.setState({...})를 통하여 컴포넌트 내부에서 값을 변경할 수 있다. 렌더링이되기 전엔 steState메소드를 사용하지 못하며 (즉 constructor에서 사용 할 수 없다.), 렌더링이 된 다음에는 this.state= 형식으로 사용해서는 안된다.
@@ -134,4 +134,57 @@ ReactDOM.render(
 [this.state = 의 좋지 못한 예](http://codepen.io/shuushu/pen/pELZaV)
 
 ### 비슷한 코드를 반복 하는 예제
+[Lesson2-1. react : component Mapping](http://codepen.io/shuushu/pen/NRYpBw)
+```
+class ContactInfo extends React.Component {
+  render(){
+    return(
+      <div>{this.props.address.name} / {this.props.address.phone}</div>
+    );
+  }
+}
 
+class Component extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      // 주소록 데이터
+      contactData : [
+        {name: 'Abet', phone: '010-5437-8601' },
+        {name: 'Betty', phone: '011-5437-8601' },
+        {name: 'Chris', phone: '016-5437-8601' },
+        {name: 'David', phone: '017-5437-8601' },
+        {name: 'Ember', phone: '019-5437-8601' }
+      ]      
+    }
+  }
+  render(){
+    // 2. 렌더링 내부에 또 다른 함수를 만든다.
+    const mapToComponent = (data) => {
+      // 새로운 배열을 받아 리턴한다.
+      // contact : data배열의 값을 받는다, i는 index
+      return data.map((contact,i) => {
+        // 컴포넌트를 리턴한다.
+        // key : 각 데이터의 식별자
+        return (<ContactInfo address={contact} key={i} />)
+      }) 
+    };
+    
+    return(
+      // 1.mapToComponent함수를 실행한다 
+      <div>
+        {mapToComponent(this.state.contactData)}
+      </div>
+    );
+  };
+}
+
+class App extends React.Component {
+  render(){
+    return(<Component / >);
+  }
+}
+        
+ReactDOM.render(<App/>,document.getElementById('root'))
+
+```
