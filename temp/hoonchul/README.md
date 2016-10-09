@@ -130,12 +130,12 @@ ReactDOM.render(
   <App></App>,
   document.getElementById("root")
 );
-```javascript
+```
 [this.state = 의 좋지 못한 예](http://codepen.io/shuushu/pen/pELZaV)
 
 ### 비슷한 코드를 반복 하는 예제
 [Lesson2-1. react : component Mapping](http://codepen.io/shuushu/pen/NRYpBw)
-```
+```javascript
 class ContactInfo extends React.Component {
   render(){
     return(
@@ -203,13 +203,13 @@ ReactDOM.render(<App/>,document.getElementById('root'))
 - webpack: 브라우저 위에서 import(require) 를 할 수 있게 해주고 자바스크립트 파일들을 하나로 합쳐줍니다
 - webpack-dev-server: 별도의 서버를 구축하지 않고도 static 파일을 다루는 웹서버를 열 수 있으며 hot-loader 를 통하여 코드가 수정 될 때마다 자동으로 리로드 되게 할 수 있습니다.
 
-```
+```javascript
 npm install --save react react-dom
 ```
 > --save가 있어야 react react-dom를 package.json에 파일을 추가 한다.
 
 개발 의존  모듈 설치
-```
+```javascript
 npm install --save-dev react-hot-loader webpack webpack-dev-server
 npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react 
 ```
