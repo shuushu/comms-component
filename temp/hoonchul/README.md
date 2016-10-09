@@ -194,10 +194,11 @@ ReactDOM.render(<App/>,document.getElementById('root'))
 [작업환경 설치 안내](https://velopert.com/1980)
 
 클라우드형 IDE 
-1. https://nitrous.io/ (한달에 50시간 밖에 켜놓지 못한다.)
-2. https://c9.io/ (또 다른 클라우드형 IDE, 가입할 때 VISA 카드 필요)
-3. http://goorm.io (한국형IDE-인터넷속도가 제한이 되어있다)
-4. http://codeanywhere.com (포트를 1개 밖에 열수 없는 단점)
+
+- 1. https://nitrous.io/ (한달에 50시간 밖에 켜놓지 못한다.)
+- 2. https://c9.io/ (또 다른 클라우드형 IDE, 가입할 때 VISA 카드 필요)
+- 3. http://goorm.io (한국형IDE-인터넷속도가 제한이 되어있다)
+- 4. http://codeanywhere.com (포트를 1개 밖에 열수 없는 단점)
 
 
 - webpack: 브라우저 위에서 import(require) 를 할 수 있게 해주고 자바스크립트 파일들을 하나로 합쳐줍니다
