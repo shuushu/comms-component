@@ -200,6 +200,7 @@ ReactDOM.render(<App/>,document.getElementById('root'))
 - 3. http://goorm.io (한국형IDE-인터넷속도가 제한이 되어있다)
 - 4. http://codeanywhere.com (포트를 1개 밖에 열수 없는 단점)
 
+설치 모듈
 
 - webpack: 브라우저 위에서 import(require) 를 할 수 있게 해주고 자바스크립트 파일들을 하나로 합쳐줍니다
 - webpack-dev-server: 별도의 서버를 구축하지 않고도 static 파일을 다루는 웹서버를 열 수 있으며 hot-loader 를 통하여 코드가 수정 될 때마다 자동으로 리로드 되게 할 수 있습니다.
