@@ -130,7 +130,7 @@ ReactDOM.render(
   <App></App>,
   document.getElementById("root")
 );
-```
+```javascript
 [this.state = 의 좋지 못한 예](http://codepen.io/shuushu/pen/pELZaV)
 
 ### 비슷한 코드를 반복 하는 예제
@@ -188,3 +188,29 @@ class App extends React.Component {
 ReactDOM.render(<App/>,document.getElementById('root'))
 
 ```
+
+##Lesson3. 작업환경 셋팅하기
+>주의: Node.js를 설치 한 다음에, npm install -g npm 을 통하여 npm 버전을 최신버전으로 업데이트하세요. LTS 버전에서는 지금은 NPM을 2.15.9 을 사용하는데, 이는 모듈을 설치할때 nested 된 구조로 설치하기 때문에 React.js 프로젝트를 만들땐 정말, 정말, 오래걸립니다. (babel-preset-es2015 설치 할 때). 위 명령어로 최신버전인 3.10.6 을 사용하면 모듈설치가 훨씬 빨라집니다. (node_modules 의 용량차이가 어마어마합니다. babel-preset-es2015 의 경우 6.14MB, 구버전 NPM을 사용 했을땐, 144MB)
+[작업환경 설치 안내](https://velopert.com/1980)
+
+클라우드형 IDE 
+1. https://nitrous.io/ (한달에 50시간 밖에 켜놓지 못한다.)
+2. https://c9.io/ (또 다른 클라우드형 IDE, 가입할 때 VISA 카드 필요)
+3. http://goorm.io (한국형IDE-인터넷속도가 제한이 되어있다)
+4. http://codeanywhere.com (포트를 1개 밖에 열수 없는 단점)
+
+
+- webpack: 브라우저 위에서 import(require) 를 할 수 있게 해주고 자바스크립트 파일들을 하나로 합쳐줍니다
+- webpack-dev-server: 별도의 서버를 구축하지 않고도 static 파일을 다루는 웹서버를 열 수 있으며 hot-loader 를 통하여 코드가 수정 될 때마다 자동으로 리로드 되게 할 수 있습니다.
+
+```
+npm install --save react react-dom
+```
+> --save가 있어야 react react-dom를 package.json에 파일을 추가 한다.
+
+개발 의존  모듈 설치
+```
+npm install --save-dev react-hot-loader webpack webpack-dev-server
+npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react 
+```
+> --save-dev가 붙는데 개발과정에 필요한 패키지들인데, dev가 없어도 실행은 되나 나중에 패키지 관리할때 불편함이 따른다. react-hot-loader : 개발서버가 실행중에 특정 react가 변경되는 부분만 업데이트 해준다.
