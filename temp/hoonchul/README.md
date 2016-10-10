@@ -216,3 +216,24 @@ npm install --save-dev react-hot-loader webpack webpack-dev-server
 npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react 
 ```
 > --save-dev가 붙는데 개발과정에 필요한 패키지들인데, dev가 없어도 실행은 되나 나중에 패키지 관리할때 불편함이 따른다. react-hot-loader : 개발서버가 실행중에 특정 react가 변경되는 부분만 업데이트 해준다.
+
+Hot Module Replacement | React Hot Loader (10/10)
+
+> 주의: 최근 react-hot-loader 가 업데이트 되어서, 그냥 설치하시면 “react-hot-loader”: “^3.0.0-beta.3” 가 설치됩니다.
+설치 하실 때, npm install --save react-hot-loader@1.3.0 을 하시거나, 버전 3을 쓰고 싶다면 webpack.config.js 와 src/index.js 파일 수정을 다음과 같이 하세요:
+https://gist.github.com/velopert/c5b1f5f748d9aa8b78f729a321682230
+
+
+
+Links:
+– https://github.com/velopert/react-cod… (프로젝트 초기 코드)
+– https://velopert.com/2037 (쉽게 프로젝트를 만들 수 있는 create-react-app 사용기)
+
+##Lesson4. 주소록
+
+> 코드내 주석으로 표시
+
+- 4-1. 검색기능
+- 4-2. 선택기능 구현
+
+
