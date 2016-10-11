@@ -1,6 +1,9 @@
 import React from 'react';
 import ContactInfo from './ContactInfo';
 import ContactDetails from './ContactDetails';
+import update from 'react-addons-update';
+// 4-3-2 새로만든 컴포넌트는 불러온다
+import ContactCreate from './ContactCreate';
 
 export default class Contact extends React.Component {
 	constructor(props){
@@ -27,6 +30,10 @@ export default class Contact extends React.Component {
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleClick = this.handleClick.bind(this);
+
+		this.handleCreate = this.handleCreate.bind(this);
+		this.handleRemove = this.handleRemove.bind(this);
+		this.handleEdit = this.handleEdit.bind(this);
 	}
 	// 4-1-3 value를 변경할 메소드를 만들어 준다.
 	handleChange(e){
@@ -41,6 +48,33 @@ export default class Contact extends React.Component {
 	handleClick(key){
 		this.setState({
 			selectedKey : key
+		})
+	}
+
+	handleCreate(contact) {
+		this.setState({
+			contactData : update(this.state.contactData, {$push:[contact]})
+		});
+	}
+
+	handleRemove(){
+		this.setState({
+			contactData : update(this.state.contactData,{
+				$splice : [[this.state.selectedKey, 1]]
+			}),
+			// 4-3-1 무효화 시킨다
+			selectedKey : -1
+		})
+	}
+
+	handleEdit(name, phone){
+		this.setState({
+			contactData : update(this.state.contactData,{
+				[this.state.selectedKey] : {
+					name : {$set : name},
+					phone : {$set : phone}
+				}
+			})
 		})
 	}
 
@@ -85,6 +119,10 @@ export default class Contact extends React.Component {
 				<ContactDetails 
 					isSelected={this.state.selectedKey != -1}
 					contact={this.state.contactData[this.state.selectedKey]}
+				 />
+				{/* 4-3-6 props 전달 */}
+				 <ContactCreate
+				 	onCreate={this.handleCreate}
 				 />
 			</div>
 		);
