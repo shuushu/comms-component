@@ -240,7 +240,7 @@ Links:
 > LifeCycle API는 컴포넌트가 DOM위에 생성되기 전과 후 그리고 데이터가 변경되어 상태를 업데이트 하기 전과 후 그다음 컴포넌트가 DOM에서 사라지기전에 실행되는 method이다.
 
 #### Component LifeCycle API Method
-0. constructor : 컴포넌트가 처음 만들어질때 실행/ 기본 state를 설정 할 수 있다.
+> constructor : 컴포넌트가 처음 만들어질때 실행/ 기본 state를 설정 할 수 있다.
 ```javascript
 constructor(props){
   super(props);
