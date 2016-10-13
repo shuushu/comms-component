@@ -186,7 +186,6 @@ class App extends React.Component {
 }
         
 ReactDOM.render(<App/>,document.getElementById('root'))
-
 ```
 
 ##Lesson3. 작업환경 셋팅하기
@@ -235,5 +234,74 @@ Links:
 
 - 4-1. 검색기능
 - 4-2. 선택기능 구현
-- 4-3. 추가/삭제/구현
+- 4-3. 추가/수정/삭제/수정 구현
+- 4-4. Cotact 엑시트라 기능 구현
+- 4-5. Component LifeCycle API
+> LifeCycle API는 컴포넌트가 DOM위에 생성되기 전과 후 그리고 데이터가 변경되어 상태를 업데이트 하기 전과 후 그다음 컴포넌트가 DOM에서 사라지기전에 실행되는 method이다.
+
+#### Component LifeCycle API Method
+0. constructor : 컴포넌트가 처음 만들어질때 실행/ 기본 state를 설정 할 수 있다.
+```javascript
+constructor(props){
+  super(props);
+  colsoe.log('constructor');
+}
+```
+1. componentWillMount : 컴포넌트가 DOM 위에 만들어지기 전에 실행된다
+/ 여기서는 DOM처리를 할수 없다.
+```javascript
+componentWillMount(){
+  console.log('componentWillMount');
+}
+```
+2. componentDidMount : 첫 렌더링 마치고 실행, 이안에서 다른 자바스크립트 프레임워크 연동 및 setTimeout, setInterval 및 Ajax사용 또한 DOM처리를 할 수 있다.
+```javascript
+componentDidMount(){
+  console.log('componentDidMount');
+}
+```
+3. componentWillReceiveProps : 컴포넌트가 새로운 props를 받았을때 실행된다. props에 따라 state를 업데이트 할때 유용, 이안에서 setState를 사용해도 괜찮다.
+```javascript
+componentWillReceiveProps(nextProps){
+  console.log('componentWillRecevieProps:' + JSON.stringify(nextProps));
+}
+```
+4. shouldComponentUpdate : 컴포넌트가 업데이트 실행여부 결정,
+props/state 가 변경되었을 때 리렌더링을 할지말지 정한다
+실제로 사용 할 때 는 필요한 비교를 하고 값을 반환해야 한다
+예: return nextProps.id !== this.props.id
+JSON.stringify 를 사용하여 여러 field 를 편하게 비교
+```javascript
+shouldComponentUpdate(nextProps, nextState){
+    console.log("shouldComponentUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
+    return true;
+}
+```
+5. componentWillUpdate : 컴포넌트가 업데이트가 실행되기 전, 
+여기서 setState 절대 사용하지 말 것. 무한루프에 빠진다.
+```javascript
+componentWillUpdate(nextProps, nextState){
+    console.log("componentWillUpdate: " + JSON.stringify(nextProps) + " " + JSON.stringify(nextState));
+}
+```
+6. componentDidUpdate : 컴포넌트가 업데이트가 실행된 후, 여기서도 setState 사용 하지 말 것
+```javascript
+componentDidUpdate(prevProps, prevState){
+    console.log("componentDidUpdate: " + JSON.stringify(prevProps) + " " + JSON.stringify(prevState));
+}
+```
+7. componentWillUnmount : 컴포넌트가 DOM 에서 사라진 후 실행된다
+```javascript
+componentWillUnmount(){
+    console.log("componentWillUnmount");
+}
+```
+[예제](https://codepen.io/velopert/pen/OXRbRj)
+![](https://s3.amazonaws.com/media-p.slid.es/uploads/530172/images/2936545/final.png)
+
+
+### 컴포넌트의 중요 method 정리
+
+
+2. componentWillMount : 컴포넌트가 DOM위에 만들어지기 전에 실행
 
