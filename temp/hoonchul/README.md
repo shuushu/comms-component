@@ -1,4 +1,5 @@
 # react
+[[TOC]]
 
 ##Lesson1. JSX syntax / props (10/08)
 
