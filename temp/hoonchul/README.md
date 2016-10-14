@@ -1,6 +1,17 @@
 # react
-<!-- START doctoc -->
-<!-- END doctoc -->
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Lesson1. JSX syntax / props (10/08)](#lesson1-jsx-syntax--props-1008)
+- [Lesson2. this.state (10/08)](#lesson2-thisstate-1008)
+- [Lesson3. 작업환경 셋팅하기](#lesson3-%EC%9E%91%EC%97%85%ED%99%98%EA%B2%BD-%EC%85%8B%ED%8C%85%ED%95%98%EA%B8%B0)
+- [Lesson4. 주소록](#lesson4-%EC%A3%BC%EC%86%8C%EB%A1%9D)
+  - [Component LifeCycle API Method](#component-lifecycle-api-method)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Lesson1. JSX syntax / props (10/08)
 [예제파일](http://codepen.io/shuushu/pen/EgQpXQ)
@@ -76,7 +87,8 @@ CheckType.defaultProps = {
 }
 
 ReactDOM.render (<CheckType />, document.getElementById('checkType'))
-```># Lesson2. this.state (10/08)
+```
+## Lesson2. this.state (10/08)
 
 > STATE는 컴포넌트에서 유동적인 데이터를 보내주는데 초기값을 설정해주는 것이 필수이다. 만약에 기본값 설정을 하지 않고 렌더링 부분(JSX내부)에서 this.state.stateName을 하면 에러가 발생한다.
 또, props와 달리 this.setState({...})를 통하여 컴포넌트 내부에서 값을 변경할 수 있다. 렌더링이되기 전엔 steState메소드를 사용하지 못하며 (즉 constructor에서 사용 할 수 없다.), 렌더링이 된 다음에는 this.state= 형식으로 사용해서는 안된다.
@@ -130,10 +142,14 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
 [this.state = 의 좋지 못한 예](http://codepen.io/shuushu/pen/pELZaV)
 
-> 비슷한 코드를 반복 하는 예제
-[Lesson2-1. react : component Mapping](http://codepen.io/shuushu/pen/NRYpBw)
+
+>Lesson2-1 비슷한 코드를 반복 하는 예제
+
+>[react : component Mapping](http://codepen.io/shuushu/pen/NRYpBw)
+
 ```javascript
 class ContactInfo extends React.Component {
   render(){
