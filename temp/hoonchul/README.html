@@ -1,0 +1,1050 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>README</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-react" class="anchor" href="#react" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>react</h1>
+
+
+
+
+
+<h2>
+<a id="user-content-lesson1-jsx-syntax--props-1008" class="anchor" href="#lesson1-jsx-syntax--props-1008" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lesson1. JSX syntax / props (10/08)</h2>
+
+<p><a href="http://codepen.io/shuushu/pen/EgQpXQ">예제파일</a></p>
+
+<ul>
+<li>CODEPEN 설정 , ES6 클래스</li>
+<li>JSX의 syntax</li>
+<li>PROPS</li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Codelab</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span> {
+  <span class="pl-en">render</span>(){
+    <span class="pl-c">// 3. JSX안에서 style을 설정 할때는, String형식을 사용하지 않고, key가 camelCase인 객체사 사용된다 */</span>
+    <span class="pl-k">let</span> style <span class="pl-k">=</span> {
+      color <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>aqua<span class="pl-pds">'</span></span>,
+      backgroundColor <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>black<span class="pl-pds">'</span></span>
+    }
+    <span class="pl-c">// 2. JSX안에서 javascript를 표현</span>
+    <span class="pl-k">let</span> text <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Hello<span class="pl-pds">"</span></span>        
+    <span class="pl-c">/*  1. 컴포넌트에서 여러 엘리먼트를 렌더링 할 때 꼭 container element 안에 포함되어야 한다.*/</span>
+    <span class="pl-k">return</span>(
+      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span><span class="pl-c1">CODE</span> <span class="pl-c1">PEN</span><span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>{text}<span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>div style<span class="pl-k">=</span>{style}<span class="pl-k">&gt;</span>
+          <span class="pl-k">if</span> Else 문은 <span class="pl-c1">JSX</span>에서 사용 불가. 이에 대안은 삼항식이 있다. <span class="pl-k">&lt;</span>br<span class="pl-k">/</span><span class="pl-k">&gt;</span>
+          <span class="pl-c1">1</span>과<span class="pl-c1">1</span>은 같다 .{<span class="pl-c1">1</span><span class="pl-k">===</span><span class="pl-c1">1</span> <span class="pl-k">?</span> <span class="pl-s"><span class="pl-pds">'</span>true<span class="pl-pds">'</span></span> <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>false<span class="pl-pds">'</span></span>}
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+        {<span class="pl-c">/* 4. 주석도 같은 규칙으로 container안에 있어야 오류가 나지 않는다. */</span>}
+        <span class="pl-k">&lt;</span>div className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>box<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+          <span class="pl-c1">JSX</span>안에서 <span class="pl-k">class</span>를 설정 할 때는 <span class="pl-k">class</span><span class="pl-k">=</span> 가 아닌 className<span class="pl-k">=</span>을 사용한다.
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>h1<span class="pl-k">&gt;</span>props <span class="pl-k">&amp;</span> state 이해<span class="pl-k">&lt;</span><span class="pl-k">/</span>h1<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+          <span class="pl-k">&lt;</span>p<span class="pl-k">&gt;</span>{<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-c1">name</span>}<span class="pl-k">&lt;</span><span class="pl-k">/</span>p<span class="pl-k">&gt;</span>
+          {<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">children</span>}
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+      <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+    );
+  }
+}
+
+<span class="pl-c">// 앱을 불러오는 컴포넌트</span>
+<span class="pl-k">class</span> <span class="pl-en">App</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span>{
+  <span class="pl-en">render</span>(){
+    <span class="pl-k">return</span> (
+      <span class="pl-k">&lt;</span>Codelab name<span class="pl-k">=</span>{<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-c1">name</span>} <span class="pl-k">&gt;</span>{<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">children</span>}<span class="pl-k">&lt;</span><span class="pl-k">/</span>Codelab<span class="pl-k">&gt;</span>
+    );
+  }
+}
+
+<span class="pl-c">// 렌더링</span>
+<span class="pl-smi">ReactDOM</span>.<span class="pl-en">render</span>(<span class="pl-k">&lt;</span>App name<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>value<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span> 여기 사이에 있는 값이 <span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">children</span> 이 된다.<span class="pl-k">&lt;</span><span class="pl-k">/</span>App<span class="pl-k">&gt;</span>, <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>root<span class="pl-pds">'</span></span>));
+
+
+<span class="pl-k">class</span> <span class="pl-en">CheckType</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span> {
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> (
+      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+        Hello {<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">test_name</span>} <span class="pl-k">/</span> 
+        {<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">test_value</span>} <span class="pl-k">/</span>
+        {<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">children</span>}
+      <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+    );
+  }
+}
+<span class="pl-c">// props typecheck</span>
+<span class="pl-smi">CheckType</span>.<span class="pl-smi">propTypes</span> <span class="pl-k">=</span> {
+  test_name <span class="pl-k">:</span> <span class="pl-smi">React</span>.<span class="pl-smi">PropTypes</span>.<span class="pl-smi">string</span>,
+  test_value <span class="pl-k">:</span> <span class="pl-smi">React</span>.<span class="pl-smi">PropTypes</span>.<span class="pl-smi">number</span>.<span class="pl-smi">isRequired</span>
+}
+<span class="pl-c">// propDefault</span>
+<span class="pl-smi">CheckType</span>.<span class="pl-smi">defaultProps</span> <span class="pl-k">=</span> {
+  test_name <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>unknown<span class="pl-pds">'</span></span>,
+  test_value <span class="pl-k">:</span> <span class="pl-c1">57</span>
+}
+
+<span class="pl-smi">ReactDOM</span>.<span class="pl-en">render</span> (<span class="pl-k">&lt;</span>CheckType <span class="pl-k">/</span><span class="pl-k">&gt;</span>, <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>checkType<span class="pl-pds">'</span></span>))
+<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>&gt;# Lesson2. this.state (10/08)</span>
+<span class="pl-s"></span>
+<span class="pl-s">&gt; STATE는 컴포넌트에서 유동적인 데이터를 보내주는데 초기값을 설정해주는 것이 필수이다. 만약에 기본값 설정을 하지 않고 렌더링 부분(JSX내부)에서 this.state.stateName을 하면 에러가 발생한다.</span>
+<span class="pl-s">또, props와 달리 this.setState({...})를 통하여 컴포넌트 내부에서 값을 변경할 수 있다. 렌더링이되기 전엔 steState메소드를 사용하지 못하며 (즉 constructor에서 사용 할 수 없다.), 렌더링이 된 다음에는 this.state= 형식으로 사용해서는 안된다.</span>
+<span class="pl-s">그 이유는 setState메소드인 경우 state를 바로 수정하는게 아니라 리액트 개발자가 지정한 안정적인 프로세스를 통하여 값을 변경해줘야 된다. 직접 this.state를 변경하고 강제로 리렌더링을 업데이트 할 수는 있지만, 리액트의 장점인 바뀐 부분만 업데이트만 렌더링 해준다는 장점을 무시하는 것과 같으며 성능에도 영향이 있다.</span>
+<span class="pl-s"></span>
+<span class="pl-s"></span>
+<span class="pl-s">[this.state 설정 및 event bind](http://codepen.io/shuushu/pen/BLAWJR)</span>
+<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span></span> javascript
+<span class="pl-k">class</span> <span class="pl-en">Counter</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span> {
+  <span class="pl-c">// 1. this.state 사용 할려면 초기값 설정이 필수이다.</span>
+  <span class="pl-c">// 2. constructor(props) 는 counter가 만들어질 때 상속받는 props다.</span>
+  <span class="pl-en">constructor</span>(<span class="pl-smi">props</span>){
+    <span class="pl-c">// 3. super를 통해 상속받은 class, React.Component 즉 parent의 생성자를 먼저 실행한다. super를 먼저 실행해주어야 this.state, props를 사용할 수 있다.</span>
+    <span class="pl-v">super</span>(props);
+    <span class="pl-v">this</span>.<span class="pl-smi">state</span> <span class="pl-k">=</span> {
+      value <span class="pl-k">:</span> <span class="pl-c1">0</span>
+    }
+    <span class="pl-c">// 5. &lt;button onClick={this.handleClick}&gt;press me&lt;/button&gt; 실행을 하게 되면 오류가 나는데 this가 뭔지 모르기 때문에 따로 bind를 해준다. 컨벤션상 render에 바인딩을 해주는 것 보다, constructor에 바인딩을 해주는것이 더 좋다.</span>
+    <span class="pl-v">this</span>.<span class="pl-smi">handleClick</span> <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">handleClick</span>.<span class="pl-en">bind</span>(<span class="pl-v">this</span>);
+  }
+  <span class="pl-c">// 버튼이 실행될때 사용하는 method</span>
+  <span class="pl-en">handleClick</span>(){
+    <span class="pl-v">this</span>.<span class="pl-en">setState</span>({
+      value <span class="pl-k">:</span> <span class="pl-v">this</span>.<span class="pl-smi">state</span>.<span class="pl-c1">value</span> <span class="pl-k">+</span> <span class="pl-c1">1</span>
+    })
+  }
+
+  <span class="pl-en">render</span> () {
+    <span class="pl-k">return</span> (
+        <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>h2<span class="pl-k">&gt;</span>{<span class="pl-v">this</span>.<span class="pl-smi">state</span>.<span class="pl-c1">value</span>}<span class="pl-k">&lt;</span><span class="pl-k">/</span>h2<span class="pl-k">&gt;</span>
+        {<span class="pl-c">/* 4. React에서 실행되는 method는 브라우져에서 실행되는 javascript native event와  똑같은 인터페이스를 가진다. </span>
+<span class="pl-c">        6. Click={this.handleClick()}를 넣으면 렌더링을 할 때마다 그 함수를 실행하는데 렌더링 &gt; 함수 실행 &gt; 렌더링 &gt; 함수실행 등 문제가 발생한다.</span>
+<span class="pl-c">        */</span>}
+        <span class="pl-k">&lt;</span>button onClick<span class="pl-k">=</span>{<span class="pl-v">this</span>.<span class="pl-smi">handleClick</span>}<span class="pl-k">&gt;</span>press me<span class="pl-k">&lt;</span><span class="pl-k">/</span>button<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+    );
+  }
+}
+
+<span class="pl-k">class</span> <span class="pl-en">App</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span> {
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> (
+      <span class="pl-k">&lt;</span>Counter<span class="pl-k">/</span><span class="pl-k">&gt;</span>
+    );
+  }
+};
+
+<span class="pl-smi">ReactDOM</span>.<span class="pl-en">render</span>(
+  <span class="pl-k">&lt;</span>App<span class="pl-k">&gt;&lt;</span><span class="pl-k">/</span>App<span class="pl-k">&gt;</span>,
+  <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">"</span>root<span class="pl-pds">"</span></span>)
+);</pre></div>
+
+<p><a href="http://codepen.io/shuushu/pen/pELZaV">this.state = 의 좋지 못한 예</a></p>
+
+<blockquote>
+<p>비슷한 코드를 반복 하는 예제
+<a href="http://codepen.io/shuushu/pen/NRYpBw">Lesson2-1. react : component Mapping</a></p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">ContactInfo</span> <span class="pl-k">extends</span> <span class="pl-e">React</span>.<span class="pl-smi">Component</span> {
+  <span class="pl-en">render</span>(){
+    <span class="pl-k">return</span>(
+      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>{<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">address</span>.<span class="pl-c1">name</span>} <span class="pl-k">/</span> {<span class="pl-v">this</span>.<span class="pl-smi">props</span>.<span class="pl-smi">address</span>.<span class="pl-smi">phone</span>}<span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+    );
+  }
+}</pre></div>
+</blockquote>
+
+<p>class Component extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      // 주소록 데이터
+      contactData : [
+        {name: 'Abet', phone: '010-5437-8601' },
+        {name: 'Betty', phone: '011-5437-8601' },
+        {name: 'Chris', phone: '016-5437-8601' },
+        {name: 'David', phone: '017-5437-8601' },
+        {name: 'Ember', phone: '019-5437-8601' }
+      ]<br>
+    }
+  }
+  render(){
+    // 2. 렌더링 내부에 또 다른 함수를 만든다.
+    const mapToComponent = (data) =&gt; {
+      // 새로운 배열을 받아 리턴한다.
+      // contact : data배열의 값을 받는다, i는 index
+      return data.map((contact,i) =&gt; {
+        // 컴포넌트를 리턴한다.
+        // key : 각 데이터의 식별자
+        return ()
+      }) 
+    };</p>
+
+<pre><code>return(
+  // 1.mapToComponent함수를 실행한다 
+  &lt;div&gt;
+    {mapToComponent(this.state.contactData)}
+  &lt;/div&gt;
+);
+</code></pre>
+
+<p>};
+}</p>
+
+<p>class App extends React.Component {
+  render(){
+    return();
+  }
+}</p>
+
+<p>ReactDOM.render(,document.getElementById('root'))</p>
+
+<pre><code>
+## Lesson3. 작업환경 셋팅하기
+&gt;주의: Node.js를 설치 한 다음에, npm install -g npm 을 통하여 npm 버전을 최신버전으로 업데이트하세요. LTS 버전에서는 지금은 NPM을 2.15.9 을 사용하는데, 이는 모듈을 설치할때 nested 된 구조로 설치하기 때문에 React.js 프로젝트를 만들땐 정말, 정말, 오래걸립니다. (babel-preset-es2015 설치 할 때). 위 명령어로 최신버전인 3.10.6 을 사용하면 모듈설치가 훨씬 빨라집니다. (node_modules 의 용량차이가 어마어마합니다. babel-preset-es2015 의 경우 6.14MB, 구버전 NPM을 사용 했을땐, 144MB)
+[작업환경 설치 안내](https://velopert.com/1980)
+
+클라우드형 IDE 
+
+- 1. https://nitrous.io/ (한달에 50시간 밖에 켜놓지 못한다.)
+- 2. https://c9.io/ (또 다른 클라우드형 IDE, 가입할 때 VISA 카드 필요)
+- 3. http://goorm.io (한국형IDE-인터넷속도가 제한이 되어있다)
+- 4. http://codeanywhere.com (포트를 1개 밖에 열수 없는 단점)
+
+설치 모듈
+
+- webpack: 브라우저 위에서 import(require) 를 할 수 있게 해주고 자바스크립트 파일들을 하나로 합쳐줍니다
+- webpack-dev-server: 별도의 서버를 구축하지 않고도 static 파일을 다루는 웹서버를 열 수 있으며 hot-loader 를 통하여 코드가 수정 될 때마다 자동으로 리로드 되게 할 수 있습니다.
+
+```javascript
+npm install --save react react-dom
+</code></pre>
+
+<blockquote>
+<p>--save가 있어야 react react-dom를 package.json에 파일을 추가 한다.</p>
+</blockquote>
+
+<p>개발 의존  모듈 설치</p>
+
+<div class="highlight highlight-source-js"><pre>npm install <span class="pl-k">--</span>save<span class="pl-k">-</span>dev react<span class="pl-k">-</span>hot<span class="pl-k">-</span>loader webpack webpack<span class="pl-k">-</span>dev<span class="pl-k">-</span>server
+npm install <span class="pl-k">--</span>save<span class="pl-k">-</span>dev babel<span class="pl-k">-</span>core babel<span class="pl-k">-</span>loader babel<span class="pl-k">-</span>preset<span class="pl-k">-</span>es2015 babel<span class="pl-k">-</span>preset<span class="pl-k">-</span>react </pre></div>
+
+<blockquote>
+<p>--save-dev가 붙는데 개발과정에 필요한 패키지들인데, dev가 없어도 실행은 되나 나중에 패키지 관리할때 불편함이 따른다. react-hot-loader : 개발서버가 실행중에 특정 react가 변경되는 부분만 업데이트 해준다.</p>
+</blockquote>
+
+<p>Hot Module Replacement | React Hot Loader (10/10)</p>
+
+<blockquote>
+<p>주의: 최근 react-hot-loader 가 업데이트 되어서, 그냥 설치하시면 “react-hot-loader”: “^3.0.0-beta.3” 가 설치됩니다.
+설치 하실 때, npm install --save react-hot-loader@1.3.0 을 하시거나, 버전 3을 쓰고 싶다면 webpack.config.js 와 src/index.js 파일 수정을 다음과 같이 하세요:
+<a href="https://gist.github.com/velopert/c5b1f5f748d9aa8b78f729a321682230">https://gist.github.com/velopert/c5b1f5f748d9aa8b78f729a321682230</a></p>
+</blockquote>
+
+<p>Links:
+– <a href="https://github.com/velopert/react-cod%E2%80%A6">https://github.com/velopert/react-cod…</a> (프로젝트 초기 코드)
+– <a href="https://velopert.com/2037">https://velopert.com/2037</a> (쉽게 프로젝트를 만들 수 있는 create-react-app 사용기)</p>
+
+<h2>
+<a id="user-content-lesson4-주소록" class="anchor" href="#lesson4-%EC%A3%BC%EC%86%8C%EB%A1%9D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lesson4. 주소록</h2>
+
+<blockquote>
+<p>코드내 주석으로 표시</p>
+</blockquote>
+
+<ul>
+<li>4-1. 검색기능</li>
+<li>4-2. 선택기능 구현</li>
+<li>4-3. 추가/수정/삭제/수정 구현</li>
+<li>4-4. Cotact 엑시트라 기능 구현</li>
+<li>4-5. Component LifeCycle API
+&gt; LifeCycle API는 컴포넌트가 DOM위에 생성되기 전과 후 그리고 데이터가 변경되어 상태를 업데이트 하기 전과 후 그다음 컴포넌트가 DOM에서 사라지기전에 실행되는 method이다.</li>
+</ul>
+
+<h3>
+<a id="user-content-component-lifecycle-api-method" class="anchor" href="#component-lifecycle-api-method" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Component LifeCycle API Method</h3>
+
+<blockquote>
+<p>constructor : 컴포넌트가 처음 만들어질때 실행/ 기본 state를 설정 할 수 있다.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">constructor</span>(<span class="pl-smi">props</span>){
+  <span class="pl-v">super</span>(props);
+  <span class="pl-smi">colsoe</span>.<span class="pl-en">log</span>(<span class="pl-s"><span class="pl-pds">'</span>constructor<span class="pl-pds">'</span></span>);
+}</pre></div>
+
+<p>componentWillMount : 컴포넌트가 DOM 위에 만들어지기 전에 실행된다
+/ 여기서는 DOM처리를 할수 없다.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentWillMount</span>(){
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>componentWillMount<span class="pl-pds">'</span></span>);
+}</pre></div>
+
+<p>componentDidMount : 첫 렌더링 마치고 실행, 이안에서 다른 자바스크립트 프레임워크 연동 및 setTimeout, setInterval 및 Ajax사용 또한 DOM처리를 할 수 있다.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentDidMount</span>(){
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>componentDidMount<span class="pl-pds">'</span></span>);
+}</pre></div>
+
+<p>componentWillReceiveProps : 컴포넌트가 새로운 props를 받았을때 실행된다. props에 따라 state를 업데이트 할때 유용, 이안에서 setState를 사용해도 괜찮다.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentWillReceiveProps</span>(<span class="pl-smi">nextProps</span>){
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>componentWillRecevieProps:<span class="pl-pds">'</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(nextProps));
+}</pre></div>
+
+<p>shouldComponentUpdate : 컴포넌트가 업데이트 실행여부 결정,
+props/state 가 변경되었을 때 리렌더링을 할지말지 정한다
+실제로 사용 할 때 는 필요한 비교를 하고 값을 반환해야 한다
+예: return nextProps.id !== this.props.id
+JSON.stringify 를 사용하여 여러 field 를 편하게 비교</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">shouldComponentUpdate</span>(<span class="pl-smi">nextProps</span>, <span class="pl-smi">nextState</span>){
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>shouldComponentUpdate: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(nextProps) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(nextState));
+    <span class="pl-k">return</span> <span class="pl-c1">true</span>;
+}</pre></div>
+
+<p>componentWillUpdate : 컴포넌트가 업데이트가 실행되기 전, 
+여기서 setState 절대 사용하지 말 것. 무한루프에 빠진다.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentWillUpdate</span>(<span class="pl-smi">nextProps</span>, <span class="pl-smi">nextState</span>){
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>componentWillUpdate: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(nextProps) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(nextState));
+}</pre></div>
+
+<p>componentDidUpdate : 컴포넌트가 업데이트가 실행된 후, 여기서도 setState 사용 하지 말 것</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentDidUpdate</span>(<span class="pl-smi">prevProps</span>, <span class="pl-smi">prevState</span>){
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>componentDidUpdate: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(prevProps) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">JSON</span>.<span class="pl-en">stringify</span>(prevState));
+}</pre></div>
+
+<p>componentWillUnmount : 컴포넌트가 DOM 에서 사라진 후 실행된다</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">componentWillUnmount</span>(){
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>componentWillUnmount<span class="pl-pds">"</span></span>);
+}</pre></div>
+
+<p><a href="https://codepen.io/velopert/pen/OXRbRj">예제</a></p>
+</blockquote>
+
+<p><a href="https://camo.githubusercontent.com/f49ee1421960cbcb67628b96cc8ba631c8f54324/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3533303137322f696d616765732f323933363534352f66696e616c2e706e67" target="_blank"><img src="https://camo.githubusercontent.com/f49ee1421960cbcb67628b96cc8ba631c8f54324/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f3533303137322f696d616765732f323933363534352f66696e616c2e706e67" alt="" data-canonical-src="https://s3.amazonaws.com/media-p.slid.es/uploads/530172/images/2936545/final.png" style="max-width:100%;"></a></p>
+</article></body></html>

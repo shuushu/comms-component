@@ -1,8 +1,8 @@
 # react
-[[TOC]]
+<!-- START doctoc -->
+<!-- END doctoc -->
 
-##Lesson1. JSX syntax / props (10/08)
-
+## Lesson1. JSX syntax / props (10/08)
 [예제파일](http://codepen.io/shuushu/pen/EgQpXQ)
 - CODEPEN 설정 , ES6 클래스
 - JSX의 syntax
@@ -76,9 +76,7 @@ CheckType.defaultProps = {
 }
 
 ReactDOM.render (<CheckType />, document.getElementById('checkType'))
-```
-
-##Lesson2. this.state (10/08)
+```># Lesson2. this.state (10/08)
 
 > STATE는 컴포넌트에서 유동적인 데이터를 보내주는데 초기값을 설정해주는 것이 필수이다. 만약에 기본값 설정을 하지 않고 렌더링 부분(JSX내부)에서 this.state.stateName을 하면 에러가 발생한다.
 또, props와 달리 this.setState({...})를 통하여 컴포넌트 내부에서 값을 변경할 수 있다. 렌더링이되기 전엔 steState메소드를 사용하지 못하며 (즉 constructor에서 사용 할 수 없다.), 렌더링이 된 다음에는 this.state= 형식으로 사용해서는 안된다.
@@ -134,7 +132,7 @@ ReactDOM.render(
 ```
 [this.state = 의 좋지 못한 예](http://codepen.io/shuushu/pen/pELZaV)
 
-### 비슷한 코드를 반복 하는 예제
+> 비슷한 코드를 반복 하는 예제
 [Lesson2-1. react : component Mapping](http://codepen.io/shuushu/pen/NRYpBw)
 ```javascript
 class ContactInfo extends React.Component {
@@ -189,7 +187,7 @@ class App extends React.Component {
 ReactDOM.render(<App/>,document.getElementById('root'))
 ```
 
-##Lesson3. 작업환경 셋팅하기
+## Lesson3. 작업환경 셋팅하기
 >주의: Node.js를 설치 한 다음에, npm install -g npm 을 통하여 npm 버전을 최신버전으로 업데이트하세요. LTS 버전에서는 지금은 NPM을 2.15.9 을 사용하는데, 이는 모듈을 설치할때 nested 된 구조로 설치하기 때문에 React.js 프로젝트를 만들땐 정말, 정말, 오래걸립니다. (babel-preset-es2015 설치 할 때). 위 명령어로 최신버전인 3.10.6 을 사용하면 모듈설치가 훨씬 빨라집니다. (node_modules 의 용량차이가 어마어마합니다. babel-preset-es2015 의 경우 6.14MB, 구버전 NPM을 사용 했을땐, 144MB)
 [작업환경 설치 안내](https://velopert.com/1980)
 
@@ -229,7 +227,7 @@ Links:
 – https://github.com/velopert/react-cod… (프로젝트 초기 코드)
 – https://velopert.com/2037 (쉽게 프로젝트를 만들 수 있는 create-react-app 사용기)
 
-##Lesson4. 주소록
+## Lesson4. 주소록
 
 > 코드내 주석으로 표시
 
@@ -240,7 +238,7 @@ Links:
 - 4-5. Component LifeCycle API
 > LifeCycle API는 컴포넌트가 DOM위에 생성되기 전과 후 그리고 데이터가 변경되어 상태를 업데이트 하기 전과 후 그다음 컴포넌트가 DOM에서 사라지기전에 실행되는 method이다.
 
-#### Component LifeCycle API Method
+### Component LifeCycle API Method
 > constructor : 컴포넌트가 처음 만들어질때 실행/ 기본 state를 설정 할 수 있다.
 ```javascript
 constructor(props){
